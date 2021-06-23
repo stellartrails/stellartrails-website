@@ -1,0 +1,257 @@
+/* Layout for site header */
+
+.site-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.site-subtitle {
+    font-size: 1.2rem;
+    color: #E8C154;
+}
+
+/* Layout for the main section containing tiles */
+.tile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    justify-content: center;
+}
+
+/* Layout for each tile article */
+.tile-article {
+    flex: 1 1 30vw;
+    min-width: 20rem;
+    max-width: 30rem;
+}
+
+/* Margin for the link paragraph in each tile */
+.tile-link {
+    margin-top: 1rem;
+}
+
+/* Download buttons styling */
+.download-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.download-btn, .explore-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid;
+}
+
+.explore-btn {
+    background: rgba(218, 165, 32, 0.2);
+    color: #FFD966;
+    border-color: #DAA520;
+}
+
+.explore-btn:hover {
+    background: rgba(218, 165, 32, 0.35);
+    border-color: #F0C040;
+    color: #FFF;
+    transform: translateY(-2px);
+}
+
+.release-current {
+    background: rgba(240, 192, 64, 0.15);
+    color: #F0C040;
+    border-color: #F0C040;
+}
+
+.release-current:hover {
+    background: rgba(240, 192, 64, 0.3);
+    border-color: #FFD966;
+    color: #FFF;
+    transform: translateY(-2px);
+}
+
+.release-stable {
+    background: rgba(218, 165, 32, 0.15);
+    color: #DAA520;
+    border-color: #DAA520;
+}
+
+.release-stable:hover {
+    background: rgba(218, 165, 32, 0.3);
+    border-color: #E8C154;
+    color: #FFF;
+    transform: translateY(-2px);
+}
+
+.release-legacy {
+    background: rgba(184, 134, 11, 0.15);
+    color: #B8860B;
+    border-color: #B8860B;
+}
+
+.release-legacy:hover {
+    background: rgba(184, 134, 11, 0.3);
+    border-color: #DAA520;
+    color: #FFF;
+    transform: translateY(-2px);
+}
+/*
+ * Copyright (c) 2021 StellarTrails.com
+*/
+
+.tile {
+    border-radius: 0.75em;
+    padding: 2rem;
+    box-shadow: 0 0.25em 1.5em 0 rgba(218, 165, 32, 0.25);
+    margin: 1rem;
+    color: #fdfaf2;
+    border: 0.125em solid #E8C154;
+    background: rgba(218, 165, 32, 0.12);
+}
+
+.tile h2 {
+    color: #FFD966;
+    font-size: 2rem;
+}
+
+body {
+    background-color: #181818;
+    color: #DAA520;
+    font-family: sans-serif;
+    margin: 2vw;
+    font-size: 1.1rem;
+}
+
+a {
+    color: #FFD966;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+h1 {
+    color: #F0C040;
+    font-size: 2.5rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2em;
+    font-size: 1em;
+}
+
+img {
+    border: 0.0625em solid #ccc;
+    margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Visible focus styles for accessibility */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #F0C040;
+    transition: outline 0.2s, box-shadow 0.2s;
+}
+[tabindex]:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #F0C040;
+}
+
+/* Responsive Design: Media Queries */
+@media (max-width: 600px) {
+    body {
+        margin: 2vw;
+        font-size: 1em;
+    }
+    .tile-section {
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .tile-article {
+        min-width: 0;
+        max-width: 100%;
+        margin: 0.5em 0;
+        padding: 1em;
+    }
+    .site-header {
+        margin-bottom: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .site-subtitle {
+        font-size: 1em;
+    }
+    .download-links {
+        gap: 0.75rem;
+    }
+    .download-btn, .explore-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.95em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 16px;
+        font-size: 1.1em;
+    }
+    .tile-section {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .tile-article {
+        font-size: 1.1rem;
+        min-width: 0;
+        max-width: 100%;
+        margin: 1em auto;
+        padding: 1.5em;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .site-subtitle {
+        font-size: 1.1em;
+    }
+    .download-links {
+        gap: 0.85rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        margin: 20px;
+        font-size: 1.15em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .site-subtitle {
+        font-size: 1.2em;
+        margin: 2vw;
+        font-size: 1.15rem;
+    }
+    .tile-section {
+        flex-direction: row;
+        gap: 2em;
+    }
+    .tile-article {
+        min-width: 20rem;
+        max-width: 30rem;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .site-subtitle {
+        font-size: 1.2rem;
+    }
+}
