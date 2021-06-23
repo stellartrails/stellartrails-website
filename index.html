@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>StellarTrails</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stellartrails.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="site-header" role="banner">
+            <h1 id="site-title">StellarTrails</h1>
+            <p class="site-subtitle">Blaze your trail among the stars in this community-driven adventure where every choice shapes your cosmos.</p>
+        </header>
+        <main id="main-content" role="main">
+            <section class="tile-section" aria-label="Featured Projects">
+                <article class="tile tile-article" role="article" aria-labelledby="game-title">
+                    <h2 id="game-title"><i class="fa-solid fa-gamepad" aria-hidden="true"></i> StellarTrails Game</h2>
+                    <p>
+                        The <strong>StellarTrails Game</strong> is a social experiment disguised as a game. Players collectively shape the narrative and decide the direction of the story through their choices. Dive into a universe where your decisions matter and the story evolves with the community.
+                    </p>
+                    <ul>
+                        <li>Community-driven narrative</li>
+                        <li>Meaningful choices that impact the story</li>
+                        <li>Unpredictable outcomes based on collective decisions</li>
+                        <li>Cross-platform play</li>
+                    </ul>
+                </article>
+                <article class="tile tile-article" role="article" aria-labelledby="downloads-title">
+                    <h2 id="downloads-title"><i class="fa-solid fa-download" aria-hidden="true"></i> Download Releases</h2>
+                    <p>
+                        Download the latest version of StellarTrails or choose from stable and legacy releases. Each release is available for all major platforms.
+                    </p>
+                    <div class="download-links">
+                        <a href="https://github.com/stellartrails/stellartrails-website/releases/tag/current" class="download-btn release-current" role="link" aria-label="Download Current Release">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i> Current Release
+                        </a>
+                        <a href="https://github.com/stellartrails/stellartrails-website/releases/tag/stable" class="download-btn release-stable" role="link" aria-label="Download Stable Release">
+                            <i class="fa-solid fa-check-circle" aria-hidden="true"></i> Stable Release
+                        </a>
+                        <a href="https://github.com/stellartrails/stellartrails-website/releases/tag/legacy" class="download-btn release-legacy" role="link" aria-label="View Legacy Releases">
+                            <i class="fa-solid fa-history" aria-hidden="true"></i> Legacy Releases
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </main>
+                <script>
+                // Make custom interactive elements keyboard accessible
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('[role="button"], [role="link"]').forEach(function(el) {
+                        // Only add tabindex if not natively focusable
+                        if (!el.hasAttribute('tabindex')) {
+                            el.setAttribute('tabindex', '0');
+                        }
+                        el.addEventListener('keydown', function(e) {
+                            if ((e.key === 'Enter' || e.key === ' ') && !el.disabled) {
+                                el.click();
+                                e.preventDefault();
+                            }
+                        });
+                    });
+                });
+                </script>
+        </body>
+</html>
