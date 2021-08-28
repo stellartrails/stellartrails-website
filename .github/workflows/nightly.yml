@@ -18,8 +18,9 @@ jobs:
     - name: Build with Maven
       run: |
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
+        cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P windows package
-        cp windows/target/*.msi StellarTrails-nightly.msi
+        cp windows/target/*.msi ../StellarTrails-nightly.msi
     - name: Create GitHub release
       uses: softprops/action-gh-release@v1
       with:
