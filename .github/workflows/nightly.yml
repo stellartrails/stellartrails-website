@@ -20,3 +20,10 @@ jobs:
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
         cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P windows package
+        cp windows/target/*.msi StellarTrails-nightly.msi
+    - name: Create GitHub release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: nightly
+        files: |
+          StellarTrails-nightly.msi
