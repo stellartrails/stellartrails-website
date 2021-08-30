@@ -20,7 +20,7 @@ jobs:
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
         cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P macos package
-        cp windows/target/*.dmg ../StellarTrails-current.dmg
+        cp macos/target/*.dmg ../StellarTrails-current.dmg
     - name: Create GitHub release
       uses: softprops/action-gh-release@v1
       with:
