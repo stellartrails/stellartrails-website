@@ -1,4 +1,4 @@
-name: current
+name: ea
 on:
   schedule:
   - cron: "0 0 * * *"
@@ -20,13 +20,13 @@ jobs:
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
         cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P macos package
-        cp macos/target/*.dmg ../StellarTrails-current.dmg
+        cp macos/target/*.dmg ../StellarTrails.dmg
     - name: Create GitHub release
       uses: softprops/action-gh-release@v1
       with:
         tag_name: current
         files: |
-          StellarTrails-current.dmg
+          StellarTrails.dmg
   windows:
     runs-on: windows-latest
     steps:
@@ -43,10 +43,10 @@ jobs:
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
         cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P windows package
-        cp windows/target/*.msi ../StellarTrails-current.msi
+        cp windows/target/*.msi ../StellarTrails.msi
     - name: Create GitHub release
       uses: softprops/action-gh-release@v1
       with:
         tag_name: current
         files: |
-          StellarTrails-current.msi
+          StellarTrails.msi
