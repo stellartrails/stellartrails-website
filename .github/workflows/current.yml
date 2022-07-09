@@ -1,4 +1,4 @@
-name: ea
+name: current
 on:
   schedule:
   - cron: "0 0 * * *"
