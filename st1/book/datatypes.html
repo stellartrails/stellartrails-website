@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>First steps · GitBook</title>
+        <title>Standard datatypes · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="First Steps">
+        <meta name="description" content="Standard datatypes">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="firststeps.html" />
+    <link rel="next" href="datatypes.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="controlflow.html" />
     
 
     </head>
@@ -113,7 +113,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="firststeps.html">
+        <li class="chapter " data-level="2.1" data-path="firststeps.html">
             
                 <a href="firststeps.html">
             
@@ -281,7 +281,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="datatypes.html">
+        <li class="chapter active" data-level="2.3" data-path="datatypes.html">
             
                 <a href="datatypes.html">
             
@@ -421,7 +421,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >First steps</a>
+        <a href="." >Standard datatypes</a>
     </h1>
 </div>
 
@@ -436,28 +436,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="calling-a-method">Calling a method</h3>
-<p>The example below calls the <code>tick</code> method on the instance referred to as <code>timer</code>.</p>
-<pre><code>    timer.tick();
-</code></pre><h3 id="assigning-a-result">Assigning a result</h3>
-<p>The example below calls the <code>reverse</code> method on <code>name</code> and it assigns
-the result to the variable <code>result</code>.</p>
-<pre><code>  result = name.reverse();
-</code></pre><h3 id="constructing-a-new-instance">Constructing a new instance</h3>
-<p>The example below creates a new instance of a <code>Ferrari</code> and assigns it to the 
-variable <code>ferrari</code>. </p>
-<pre><code>  ferrari = new Ferrari();
-</code></pre><h3 id="defining-an-object">Defining an object</h3>
-<p>If you want to reuse your code you might consider wrapping it into an object.
-Once defined you can use <code>new</code> to create an instance. The example below 
-shows how you would define the object named <code>Ship</code>.</p>
-<pre><code>  object Ship {
-  }
-</code></pre><h3 id="defining-a-method">Defining a method</h3>
-<p>An object in and of itself cannot do anything so you will need to define some 
-methods. The example below defines the method for pushing an item.</p>
-<pre><code>  method push(item) {
-  }
+                                <h2 id="standard-datatypes">Standard datatypes</h2>
+<h3 id="using-booleans">Using Booleans</h3>
+<p>The example below creates a Boolean instance with the value of <code>true</code>
+and assigns it to <code>succeeded</code>.</p>
+<pre><code>  succeeded = true;
+</code></pre><h3 id="using-characters">Using Characters</h3>
+<p>The example below creates a Character instance with the value of <code>&apos;a&apos;</code> and 
+assigns it to <code>a</code>.</p>
+<pre><code>  a = &apos;a&apos;;
+</code></pre><h3 id="using-natural-numbers">Using Natural numbers</h3>
+<p>The example below creates a Natural instance with the value of <code>21</code> and 
+assigns it to <code>age</code>.</p>
+<pre><code>  age = 21;
+</code></pre><h3 id="using-integers">Using Integers</h3>
+<p>The example below creates an Integer instance with the value of <code>-1500</code> and
+assigns it to <code>populationGrowth</code>. </p>
+<pre><code>  populationGrowth = -1500;
+</code></pre><h3 id="using-rational-numbers">Using Rational numbers</h3>
+<p>The example below creates a Rational instance with the value of <code>1/2</code> and
+assigns it to <code>half</code>.</p>
+<pre><code>  half = 1 / 2;
+</code></pre><h3 id="using-real-numbers">Using Real numbers</h3>
+<p>The example below creates a real number with the value of the square root of 2 using a Real constructor and assigns it to <code>squareRootOf2</code>.</p>
+<pre><code>  squareRootOf2 = new Real(Real.Sqrt, 2);
+</code></pre><p>The example below creates a real number with the value of Pi using a Real constructor and assigns it to <code>pi</code>.</p>
+<pre><code>  pi = new Real(Real.Pi);
+</code></pre><h3 id="using-complex-numbers">Using Complex numbers</h3>
+<p>The example below creates a complex number with the value of <code>3 + 2i</code> using the Complex constructor and assigns it to <code>complex</code>.</p>
+<pre><code>  complex = new Complex(3,2);
 </code></pre>
                                 
                                 </section>
@@ -485,12 +492,12 @@ methods. The example below defines the method for pushing an item.</p>
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="controlflow.html#for-statement" class="navigation navigation-prev " aria-label="Previous page: For statement">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="firststeps.html#calling-a-method" class="navigation navigation-next " aria-label="Next page: Calling a method">
+                <a href="datatypes.html#using-booleans" class="navigation navigation-next " aria-label="Next page: Using Booleans">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -501,7 +508,7 @@ methods. The example below defines the method for pushing an item.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"First Steps","title":"First steps","level":"2.1","depth":1,"next":{"title":"Calling a method","level":"2.1.1","depth":2,"anchor":"#calling-a-method","path":"firststeps.md","ref":"firststeps.md#calling-a-method","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"firststeps.md","mtime":"2022-08-11T22:39:21.800Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-11T22:39:55.847Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"description":"Standard datatypes","title":"Standard datatypes","level":"2.3","depth":1,"next":{"title":"Using Booleans","level":"2.3.1","depth":2,"anchor":"#using-booleans","path":"datatypes.md","ref":"datatypes.md#using-booleans","articles":[]},"previous":{"title":"For statement","level":"2.2.5","depth":2,"anchor":"#for-statement","path":"controlflow.md","ref":"controlflow.md#for-statement","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"datatypes.md","mtime":"2022-08-11T22:39:21.800Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-11T22:39:55.847Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

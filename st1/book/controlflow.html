@@ -263,6 +263,129 @@
             
         </li>
     
+        <li class="chapter " data-level="2.2.5" data-path="controlflow.html">
+            
+                <a href="controlflow.html#for-statement">
+            
+                    
+                    For statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="datatypes.html">
+            
+                <a href="datatypes.html">
+            
+                    
+                    Standard datatypes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-booleans">
+            
+                    
+                    Using Booleans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-characters">
+            
+                    
+                    Using Characters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-natural-numbers">
+            
+                    
+                    Using Natural numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-integers">
+            
+                    
+                    Using Integers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-rational-numbers">
+            
+                    
+                    Using Rational numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-real-numbers">
+            
+                    
+                    Using Real numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="datatypes.html">
+            
+                <a href="datatypes.html#using-complex-numbers">
+            
+                    
+                    Using Complex numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -343,7 +466,19 @@ method on <code>thermostat</code>.</p>
 <pre><code>  do {
     thermostat.decreaseByOne();
   } while (thermostat.isMoreThan10Degrees());
-</code></pre>
+</code></pre><h3 id="for-statement">For statement</h3>
+<p>The example below illustrates how a for statement operates.</p>
+<ol>
+<li>Initalize <code>i</code> to <code>0</code>. </li>
+<li>Call <code>isLessThan</code> on <code>i</code> to determine if <code>i</code> is less than <code>10</code>. If so continue, otherwise exit the loop.</li>
+<li>Call <code>tick</code> on <code>timer</code>.</li>
+<li><p>Call <code>incrementOne</code> on <code>i</code> and then go to 2.</p>
+<pre><code>for(i=0; i.lessThan(10); i.incrementOne()) {
+ timer.tick();
+}
+</code></pre></li>
+</ol>
+
                                 
                                 </section>
                             
@@ -386,7 +521,7 @@ method on <code>thermostat</code>.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"Control Flow","title":"Controlling the flow","level":"2.2","depth":1,"next":{"title":"If then statement","level":"2.2.1","depth":2,"anchor":"#if-then-statement","path":"controlflow.md","ref":"controlflow.md#if-then-statement","articles":[]},"previous":{"title":"Defining a method","level":"2.1.5","depth":2,"anchor":"#defining-a-method","path":"firststeps.md","ref":"firststeps.md#defining-a-method","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"controlflow.md","mtime":"2022-08-11T20:58:18.526Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-11T20:58:51.602Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"description":"Control Flow","title":"Controlling the flow","level":"2.2","depth":1,"next":{"title":"If then statement","level":"2.2.1","depth":2,"anchor":"#if-then-statement","path":"controlflow.md","ref":"controlflow.md#if-then-statement","articles":[]},"previous":{"title":"Defining a method","level":"2.1.5","depth":2,"anchor":"#defining-a-method","path":"firststeps.md","ref":"firststeps.md#defining-a-method","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints"],"pluginsConfig":{"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"controlflow.md","mtime":"2022-08-11T22:39:21.796Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-11T22:39:55.847Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
