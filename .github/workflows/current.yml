@@ -16,7 +16,7 @@ jobs:
     - name: Build with Maven
       run: |
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/stellartrails
-        cd desktop
+        cd stellartrails
         mvn -B -DskipTests -DskipITs -ntp -P macos package
         cp macos/target/*.dmg ../StellarTrails.dmg
     - name: Create GitHub release
@@ -39,7 +39,7 @@ jobs:
     - name: Build with Maven
       run: |
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/stellartrails
-        cd desktop
+        cd stellartrails
         mvn -B -DskipTests -DskipITs -ntp -P windows package
         cp windows/target/*.msi ../StellarTrails.msi
     - name: Create GitHub release
