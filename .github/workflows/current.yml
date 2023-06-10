@@ -15,7 +15,7 @@ jobs:
         java-version: 20
     - name: Build with Maven
       run: |
-        git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
+        git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/stellartrails
         cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P macos package
         cp macos/target/*.dmg ../StellarTrails.dmg
@@ -38,7 +38,7 @@ jobs:
         java-version: 20
     - name: Build with Maven
       run: |
-        git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/desktop
+        git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_TOKEN }}@github.com/stellartrails/stellartrails
         cd desktop
         mvn -B -DskipTests -DskipITs -ntp -P windows package
         cp windows/target/*.msi ../StellarTrails.msi
