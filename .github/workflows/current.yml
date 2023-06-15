@@ -9,7 +9,7 @@ jobs:
       uses: luccas-freitas/delete-older-releases@v0.0.1
       with:
         owner: stellartrails
-        repo: stellartrails-website
+        repos: stellartrails-website
         keep_latest: 0
         delete_tag_pattern: current
       env:
