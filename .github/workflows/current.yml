@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   shared:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Drop old current release
       uses: luccas-freitas/delete-older-releases@v0.0.1
