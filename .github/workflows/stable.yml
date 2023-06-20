@@ -6,7 +6,20 @@ on:
         description: 'Release version'
         required: true
 jobs:
+  shared:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Drop old current release
+      uses: luccas-freitas/delete-older-releases@v0.0.1
+      with:
+        owner: stellartrails
+        repos: stellartrails-website
+        keep_latest: 0
+        delete_tag_pattern: stable
+      env:
+        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
   macos:
+    needs: shared
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
@@ -32,6 +45,7 @@ jobs:
         files: |
           StellarTrails.dmg
   windows:
+    needs: shared
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
