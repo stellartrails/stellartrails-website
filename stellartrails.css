@@ -75,31 +75,6 @@
     transform: translateY(-2px);
 }
 
-.release-stable {
-    background: rgba(218, 165, 32, 0.15);
-    color: #DAA520;
-    border-color: #DAA520;
-}
-
-.release-stable:hover {
-    background: rgba(218, 165, 32, 0.3);
-    border-color: #E8C154;
-    color: #FFF;
-    transform: translateY(-2px);
-}
-
-.release-legacy {
-    background: rgba(184, 134, 11, 0.15);
-    color: #B8860B;
-    border-color: #B8860B;
-}
-
-.release-legacy:hover {
-    background: rgba(184, 134, 11, 0.3);
-    border-color: #DAA520;
-    color: #FFF;
-    transform: translateY(-2px);
-}
 /*
  * Copyright (c) 2021 StellarTrails.com
 */
